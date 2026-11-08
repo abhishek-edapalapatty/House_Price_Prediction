@@ -1,0 +1,64 @@
+{
+  "data_rows_raw": 29451,
+  "data_rows_after_duplicate_removal": 29050,
+  "duplicate_rows_removed": 401,
+  "features": [
+    "POSTED_BY",
+    "UNDER_CONSTRUCTION",
+    "RERA",
+    "BHK_NO.",
+    "BHK_OR_RK",
+    "SQUARE_FT",
+    "READY_TO_MOVE",
+    "RESALE",
+    "ADDRESS",
+    "LONGITUDE",
+    "LATITUDE"
+  ],
+  "target": "TARGET(PRICE_IN_LACS)",
+  "train_rows": 23240,
+  "test_rows": 5810,
+  "random_state": 42,
+  "test_size": 0.2,
+  "winner": "Random forest",
+  "models": {
+    "Median baseline": {
+      "mae_lakhs": 111.01407228915663,
+      "median_absolute_error_lakhs": 29.0,
+      "rmse_lakhs": 745.0072384846518,
+      "r2": -0.013640114097763334,
+      "median_absolute_percentage_error_pct": 48.333333333333336
+    },
+    "Ridge regression": {
+      "mae_lakhs": 128.22551074520635,
+      "median_absolute_error_lakhs": 17.54776112294306,
+      "rmse_lakhs": 2845.590164204182,
+      "r2": -13.787934096922342,
+      "median_absolute_percentage_error_pct": 29.565812255110067
+    },
+    "Random forest": {
+      "mae_lakhs": 35.966431319102036,
+      "median_absolute_error_lakhs": 9.132622293046204,
+      "rmse_lakhs": 400.33515705103497,
+      "r2": 0.7073083947050818,
+      "median_absolute_percentage_error_pct": 15.372675794299829
+    },
+    "Extra trees": {
+      "mae_lakhs": 42.52139751466973,
+      "median_absolute_error_lakhs": 9.225055692851864,
+      "rmse_lakhs": 455.68645118829045,
+      "r2": 0.6207766796991538,
+      "median_absolute_percentage_error_pct": 15.834065440254177
+    }
+  },
+  "target_median_lakhs": 61.75,
+  "target_mean_lakhs": 141.71267676419964,
+  "target_min_lakhs": 0.25,
+  "target_max_lakhs": 30000.0,
+  "area_median_sqft": 1172.741625,
+  "area_p99_sqft": 5399.7968108,
+  "area_max_sqft": 254545454.5,
+  "missing_cells": 0,
+  "unique_addresses": 6880,
+  "sklearn_version": "1.6.1"
+}

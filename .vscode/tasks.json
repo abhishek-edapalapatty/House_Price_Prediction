@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Train house price model",
+      "type": "shell",
+      "command": "python src/train_model.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Streamlit app",
+      "type": "shell",
+      "command": "streamlit run app.py",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
