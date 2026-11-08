@@ -1,6 +1,6 @@
 # House Price Prediction
 
-A VS Code ready project for estimating listed residential property prices from the supplied dataset. The app reports estimates in lakhs and includes a dataset explorer. It is an educational model and must not be used as a certified valuation.
+Project for estimating listed residential property prices from the supplied dataset. The app reports estimates in lakhs and includes a dataset explorer. It is an educational model and must not be used as a certified valuation.
 
 ## Open and run
 
